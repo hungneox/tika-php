@@ -1,0 +1,7 @@
+.idea
+vendor
+tika
+sample_input
+
+.DS_Store
+composer.lock

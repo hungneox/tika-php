@@ -1,0 +1,24 @@
+{
+    "name": "hungneox/tika-php",
+    "description": "PHP client for Apache Tika",
+    "keywords": ["apache-tika", "client"],
+    "require": {
+        "php": "^7.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neox\\Tika\\": "src/"
+        }
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Hung Neo",
+            "email": "hungnq1989@gmail.com"
+        }
+    ]
+}
