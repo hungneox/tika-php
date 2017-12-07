@@ -9,6 +9,15 @@ A PHP client for [Apache Tika](https://tika.apache.org/)
 
 ## Usage
 
+### Installation
+
+Run the following command to install the package through Composer:
+
+```
+composer require hungneox/tika-php
+```
+
+### Extract metadata from media file
 
 ```php
 $client = new \Neox\Tika\Client('localhost', 9998);
