@@ -1,7 +1,7 @@
 {
     "name": "hungneox/tika-php",
     "description": "PHP client for Apache Tika",
-    "keywords": ["apache-tika", "client"],
+    "keywords": ["apache-tika", "tika", "client"],
     "require": {
         "php": "^7.0",
         "guzzlehttp/guzzle": "^6.3"
