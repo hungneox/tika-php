@@ -6,7 +6,7 @@ namespace Neox\Tika\Resources;
  * Class Resource
  * @package Neox\Tika\Resources
  */
-abstract class Resource
+abstract class Resource implements ResourceInterface
 {
     /**
      * @var string
@@ -53,7 +53,7 @@ abstract class Resource
     /**
      * @return string
      */
-    public function getMethod()
+    public function getMethod(): string
     {
         return $this->method;
     }
@@ -62,7 +62,7 @@ abstract class Resource
     /**
      * @return string
      */
-    public function getEndpoint(string $host = ''): string
+    public function getEndpoint(string $host): string
     {
         return $host . $this->endpoint;
     }
@@ -71,7 +71,7 @@ abstract class Resource
     /**
      * @return array
      */
-    public function getOptions()
+    public function getOptions(): array
     {
         return $this->options ?? [];
     }

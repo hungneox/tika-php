@@ -2,12 +2,12 @@
 
 namespace Neox\Tika;
 
+use Neox\Tika\Resources\Tika;
+use Neox\Tika\Resources\RMeta;
+use Neox\Tika\Resources\Parsers;
 use Neox\Tika\Resources\Language;
 use Neox\Tika\Resources\MimeTypes;
-use Neox\Tika\Resources\Parsers;
-use Neox\Tika\Resources\Resource;
-use Neox\Tika\Resources\RMeta;
-use Neox\Tika\Resources\Tika;
+use Neox\Tika\Resources\ResourceInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 
@@ -72,7 +72,7 @@ class Client
      *
      * @return ResponseInterface
      */
-    public function getResource(Resource $resource): ResponseInterface
+    public function getResource(ResourceInterface $resource): ResponseInterface
     {
         return $this->httpClient->request(
             $resource->getMethod(),
