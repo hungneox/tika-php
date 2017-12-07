@@ -12,8 +12,43 @@ A PHP client for [Apache Tika](https://tika.apache.org/)
 
 ```php
 $client = new \Neox\Tika\Client('localhost', 9998);
-$response = $client->getRecursiveMetadata(realpath('sample.pdf'));
+$response = $client->getMeta(realpath('sample.pdf'));
 echo $response;
+```
+
+### Sample output
+
+```
+"pdf:PDFVersion","1.3"
+"pdf:docinfo:title","LASKU"
+"xmp:CreatorTool","DNA Oyj"
+"access_permission:modify_annotations","true"
+"access_permission:can_print_degraded","true"
+"subject","11711235932"
+"dc:creator","DNA Oyj"
+"language","fi"
+"dc:format","application/pdf; version=1.3"
+"title","LASKU"
+"pdf:docinfo:creator_tool","DNA Oyj"
+"access_permission:fill_in_form","true"
+"pdf:encrypted","false"
+"dc:title","LASKU"
+"cp:subject","11711235932"
+"pdf:docinfo:subject","11711235932"
+"Content-Type","application/pdf"
+"pdf:docinfo:creator","DNA Oyj"
+"X-Parsed-By","org.apache.tika.parser.DefaultParser","org.apache.tika.parser.pdf.PDFParser"
+"creator","DNA Oyj"
+"meta:author","DNA Oyj"
+"access_permission:extract_for_accessibility","true"
+"access_permission:assemble_document","true"
+"xmpTPg:NPages","2"
+"access_permission:extract_content","true"
+"access_permission:can_print","true"
+"Author","DNA Oyj"
+"producer","Qvantel Business Solutions Oy - PDF Generator (revolver)"
+"access_permission:can_modify","true"
+"pdf:docinfo:producer","Qvantel Business Solutions Oy - PDF Generator (revolver)"
 ```
 
 ## Support APIs
