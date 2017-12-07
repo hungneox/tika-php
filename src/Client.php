@@ -2,6 +2,7 @@
 
 namespace Neox\Tika;
 
+use Neox\Tika\Resources\Meta;
 use Neox\Tika\Resources\Tika;
 use Neox\Tika\Resources\RMeta;
 use Neox\Tika\Resources\Parsers;
@@ -110,6 +111,17 @@ class Client
     {
         return $this->getResource(new RMeta($filePath))->getBody();
     }
+
+    /**
+     * @param string $filePath
+     *
+     * @return StreamInterface
+     */
+    public function getMeta(string $filePath): StreamInterface
+    {
+        return $this->getResource(new Meta($filePath))->getBody();
+    }
+
 
     /**
      * @param string $filePath
