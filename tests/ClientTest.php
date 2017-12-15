@@ -25,7 +25,6 @@ class ClientTest extends TestCase
      */
     public function testGetResource()
     {
-
         $response = $this->getMockBuilder(ResponseInterface::class)->getMock();
 
         $httpClient = $this->getMockBuilder(\GuzzleHttp\Client::class)
