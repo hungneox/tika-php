@@ -1,8 +1,8 @@
 # Tika PHP
 
 [![Build Status](https://travis-ci.org/hungneox/tika-php.svg?branch=master)](https://travis-ci.org/hungneox/tika-php)
-[![Coverage Status](https://coveralls.io/repos/github/hungneox/lumen-messenger-sdk/badge.svg?branch=master)](https://coveralls.io/github/hungneox/lumen-messenger-sdk?branch=master)
-[![StyleCI](https://styleci.io/repos/114259544/shield?style=flat)](https://styleci.io/repos/114259544)
+[![Coverage Status](https://coveralls.io/repos/github/hungneox/tika-php/badge.svg?branch=master)](https://coveralls.io/github/hungneox/tika-php?branch=master)
+[![StyleCI](https://styleci.io/repos/113360357/shield?style=flat)](https://styleci.io/repos/113360357)
 
 A PHP client for [Apache Tika](https://tika.apache.org/)
 
