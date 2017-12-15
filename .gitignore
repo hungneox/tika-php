@@ -6,3 +6,4 @@ sample_input
 .DS_Store
 composer.lock
 /build/logs/clover.xml
+phpunit.xml
